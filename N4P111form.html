@@ -1,0 +1,49 @@
+<html>
+ <head>
+  <title>Multipurpose Form</title>
+  <style type="text/css">
+  <!--
+td {vertical-align: top;}
+  -->
+  </style>
+ </head>
+ <body>
+  <form action="N4P111formprocess.php" method="post">
+   <table>
+    <tr>
+     <td>Comment</td>
+     <td><input type="text" name="name" /></td>
+    </tr><tr>
+     <td>Rating</td>
+     <td>
+      <input type="radio" name="type" value="stars" checked="checked" /> Stars <br/>
+      <input type="radio" name="type" value="thumbsUp" /> Thumbs Up <br/>
+      <input type="radio" name="type" value="number"/> Number <br/>
+      <input type="radio" name="type" value="whatever"/> Whatever <br/>
+     </td>
+    </tr><tr>
+     <td>Number<br/><small>(if applicable)</small></td>
+     <td>
+      <select name="numberSel">
+       <option value="">Select a number...</option>
+       <option value="1"> 1 </option>
+       <option value="2"> 2 </option>
+       <option value="3"> 3 </option>
+       <option value="4"> 4 </option>
+       <option value="4"> 5 </option>
+      </select>
+     </td>
+    </tr><tr>
+     <td> </td>
+     <td><input type="checkbox" name="debug" checked="checked" />
+      Display Debug info
+     </td>
+    </tr><tr>
+     <td colspan="2" style="text-align: center;">
+      <input type="submit" name="submit" value="See" /> 
+     </td>
+    </tr>
+   </table>
+  </form>
+ </body>
+</html>
